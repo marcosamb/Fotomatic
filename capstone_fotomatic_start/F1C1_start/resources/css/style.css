@@ -52,6 +52,7 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+
 }
 
 
@@ -86,7 +87,14 @@ header .tablet {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
+
+  header {
+    justify-content: center;
+    align-content: center;
+    height: 65px;
+  }
+
   header .desktop {
     display: none;
   }
@@ -96,9 +104,13 @@ header .tablet {
     display: none;
   }
 
+
   header .tablet {
     display: block;
     width: 100%;
+  }
+  nav li {
+    padding-left: 3rem;
   }
 
   header .tablet .button {
@@ -109,10 +121,11 @@ header .tablet {
   }
 }
 
-@media only screen and (max-width: 650px) {
-  header .desktop {
-    display: none;
+@media only screen and (max-width: 768px) {
+  header {
+    height: 48px;
   }
+
   header .tablet {
     display: none;
   }
@@ -131,6 +144,7 @@ header .tablet {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+
   }
 
   header .mobile li {
@@ -213,7 +227,7 @@ header .tablet {
 
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -225,7 +239,9 @@ header .tablet {
     width: auto;
     height: auto;
     background-color: transparent;
+    margin:auto;
     border: none;
+
   }
 
   #sign-up-cta .content {
@@ -245,7 +261,7 @@ header .tablet {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -313,7 +329,7 @@ header .tablet {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #features-section {
     flex-flow: column;
     padding: 0;
